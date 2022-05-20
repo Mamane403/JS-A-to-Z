@@ -1,16 +1,38 @@
-div{
-  background: black;
-  border: 1px solid;
-  text-align: center;
+*{
+  box-sizing: border-box;
+  font-family: serif;
+  list-style: none;
 }
 
-h4{
-font-family: serif;
-font-size: 20px;
-margin: 10px;
-color: aliceblue;
+body{
+  color: white;
+  margin: 0;
+  text-align: center;
+  min-height: 200vh;
 }
+.box{
+  border: white;
+  transition: 0.2s ease;
+  background: black;
+  padding: 10px;
+}
+.questionclicked{
+  background-color: rgb(47,47,47);
+  border-radius: 30px;
+  border: 6px dashed pink;
+}
+
 p{
   visibility: hidden;
+  width: 200px;
   text-align: center;
+  margin: 10px;
+  opacity: 0;
+  transition: 0.8s;
+  transform: translateX(-200px);
+}
+.show-response{
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(130px);
 }
