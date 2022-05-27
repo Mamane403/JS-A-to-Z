@@ -1,8 +1,7 @@
- const questionContenaire = document.querySelector(".click");
+const questionContenaire = document.querySelector(".click");
 const btn1 = document.querySelector("#btn1");
 const  btn2 = document.querySelector("#btn2");
 const response = document.querySelector("p");
-
 
 questionContenaire.addEventListener("click",()=>{
   questionContenaire.classList.toggle("questionclicked")
