@@ -29,7 +29,7 @@ window.addEventListener("mousedown",(e)=>{
 
 window.addEventListener("mouseup",(e)=>{
   mousemove.style.transform ="scale(1) translate(-50%,-50%)";
-  mousemove.style.border ="2px solid teal";
+  mousemove.style.border ="1px solid teal";
 });
 
 questionContenaire.addEventListener("mouseenter",(e)=>{
@@ -41,5 +41,5 @@ questionContenaire.addEventListener("mouseout",(e)=>{
 });
 
 response.addEventListener("mouseover",(e)=>{
-  response.style.transform = "rotate(2deg)";
+  response.style.transform = "rotate(360deg)";
 });
