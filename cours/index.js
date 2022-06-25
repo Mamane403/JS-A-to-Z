@@ -33,7 +33,7 @@ window.addEventListener("mouseup",(e)=>{
 });
 
 questionContenaire.addEventListener("mouseenter",(e)=>{
-  questionContenaire.style.background ="rgba(0,0,0,0)";
+  questionContenaire.style.background ="rgba(0,0,0,0.6)";
 });
 
 questionContenaire.addEventListener("mouseout",(e)=>{
@@ -42,4 +42,17 @@ questionContenaire.addEventListener("mouseout",(e)=>{
 
 response.addEventListener("mouseover",(e)=>{
   response.style.transform = "rotate(360deg)";
+});
+const keypressContenaire = document.querySelector(".keypress");
+const key = document.getElementById("key");
+
+document.addEventListener("keypress",(e)=>{
+key.textContent = e.key;
+if (e.key === "j") {
+  keypressContenaire.style.background ="pink";
+} else if (e.key === "k"){
+  keypressContenaire.style.background ="teal";
+} else {
+  keypressContenaire.style.background="red";
+}
 });
